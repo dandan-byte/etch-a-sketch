@@ -1,3 +1,4 @@
+//creates grid a square grid with a side of squares length.
 const createGrid = function(squares){
     const container = document.getElementById("grid-container");
     for(let i = 0; i < squares * squares; i++){
