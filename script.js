@@ -17,7 +17,8 @@ const destroyGrid = function(){
 
 //  function to pass through event listener for newGridBtn.
 const newGridBtn = function(){
-    let squares = prompt("How many squares would you like?", 0);
+    let squaresStr = prompt("How many squares would you like?", 0);
+    const squares = parseInt(squaresStr);
     if (Number.isInteger(squares) && squares <= 100){
         destroyGrid();
         createGrid(squares);
