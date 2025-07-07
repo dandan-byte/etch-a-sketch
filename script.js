@@ -34,4 +34,4 @@ const newGridBtn = function(){
 
 const btn =  document.getElementById("new-grid-btn");
 
-btn.addEventListener("click", newGridBtn);
+btn.addEventListener("click", newGridBtn());
