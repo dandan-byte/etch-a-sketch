@@ -24,14 +24,10 @@ const newGridBtn = function(){
     }else if(Number.isInteger(squares) && squares > 100){
         //logic to prompt again, with alert describing error.
         alert("Too many squares! Try again.")
-        squares = prompt("How many squares would you like?", 0);
-        destroyGrid();
-        createGrid(squares);
+        newGridBtn();
     }else {
         //logic to describe error that input is not valid.
         alert("Not a number. Please try again.");
-        squares = prompt("How many squares would you like?", 0);
-        destroyGrid();
-        createGrid(squares);
+        newGridBtn();
     };
 }
