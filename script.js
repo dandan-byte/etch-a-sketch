@@ -31,3 +31,7 @@ const newGridBtn = function(){
         newGridBtn();
     };
 }
+
+const btn =  document.getElementById("new-grid-btn");
+
+btn.addEventListener("click", newGridBtn);
