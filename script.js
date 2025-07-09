@@ -36,5 +36,9 @@ const newGridBtn = function(){
 }
 
 const btn =  document.getElementById("new-grid-btn");
+const container = document.getElementById("grid-container");
 
 btn.addEventListener("click", newGridBtn);
+container.addEventListener("mouseover", (event) => {
+    event.target.style.background = 'black';
+});
