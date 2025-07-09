@@ -1,26 +1,26 @@
-btn {
+button {
     background-color: deepskyblue;
     border-color: darkblue;
-    border-width: 1px;
+    border-width: 4px;
+    border-color: cadetblue;
 }
 
-btn:hover {
+button:hover {
     background-color: skyblue;
 }
 
-.gird-square{
+.grid-square{
     background-color: gray;
-    margin: 0;
-    border: 0;
-    padding: 0;
 }
 
 .grid-square:hover{
     background-color:black;
 }
 
-.grid-container{
+#grid-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    width: 960px;
+    height: 960px;
 }

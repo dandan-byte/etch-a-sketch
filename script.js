@@ -4,6 +4,8 @@ const createGrid = function(squares){
     for(let i = 0; i < squares * squares; i++){
         const div = document.createElement("div")
         div.setAttribute('class', 'grid-square');
+        div.style.height = 960 / squares + 'px';
+        div.style.width = 960 / squares + 'px';
         container.appendChild(div);
     };
 };
