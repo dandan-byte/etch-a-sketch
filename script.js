@@ -35,10 +35,22 @@ const newGridBtn = function(){
     };
 }
 
+// function to randomize background color
+const randomRGB = function(){
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+
+    let rgb = `rgb(${red}, ${green}, ${blue})`;
+
+    return rgb;
+}
+
 const btn =  document.getElementById("new-grid-btn");
 const container = document.getElementById("grid-container");
 
 btn.addEventListener("click", newGridBtn);
 container.addEventListener("mouseover", (event) => {
-    event.target.style.background = 'black';
+    event.target.style.backgroundColor = randomRGB();
+    event.target.style.opacity = Number(event.target.style.opacity) + 0.1;
 });

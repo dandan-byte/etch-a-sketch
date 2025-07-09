@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
 button {
     background-color: deepskyblue;
     border-color: darkblue;
@@ -9,14 +16,12 @@ button:hover {
     background-color: skyblue;
 }
 
-.grid-square{
-    background-color: gray;
-}
-
 #grid-container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 960px;
     height: 960px;
+    border: 30px;
+    border-color: red;
 }
